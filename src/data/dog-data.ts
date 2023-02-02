@@ -1,4 +1,5 @@
 import Dog from './dog';
+import { v4 as uuidv4 } from 'uuid';
 
 const dogs: Array<Dog> = [
 	{
@@ -20,3 +21,6 @@ const dogs: Array<Dog> = [
 		birthYear: 2015,
 	},
 ];
+dogs.forEach(dog => dog.id = uuidv4());
+console.log(dogs); // each cat should now have a unique ID
+export default dogs;
