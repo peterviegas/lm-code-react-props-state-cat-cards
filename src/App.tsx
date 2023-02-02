@@ -6,10 +6,11 @@ import { useState } from 'react';
 import Cat from './data/cat';
 import CatCard from './components/cat_card';
 import { v4 as uuidv4 } from 'uuid';
+import catData from './data/cat-data';
 
 function App(): JSX.Element {
 
-	const catData = [ /* big long array of cats here */];
+	//const catData = [ /* big long array of cats here */];
 	// JavaScript/TypeScript code can be inserted here!
 	const [ cats, setCats ] = useState<Array<Cat>>(catData);
 	//const [ data, setData ] = useState()
