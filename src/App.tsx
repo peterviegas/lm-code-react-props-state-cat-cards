@@ -25,6 +25,7 @@ function App(): JSX.Element {
 				<div className='cards__wrapper'>
 				{cats.map((cat, index) => 
 				<CatCard 
+				key={cat.id}
 				name={cat.name}
 				species={cat.species}
 				favFoods={cat.favFoods}
