@@ -18,6 +18,8 @@ function App(): JSX.Element {
 	const [ cats, setCats ] = useState<Array<Cat>>(catData);
 	const [ dogs, setDogs ] = useState<Array<Dog>>(dogData);
 
+	console.log(cats[10].favFoods)
+
 		const catCount = cats.length;
 		//const dogCount = dogs.length;
 	return (
